@@ -1,0 +1,146 @@
+/* --------------------------------------------------------------
+------------------------- Main ----------------------------------
+-----------------------------------------------------------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #fcfcfc;
+    font-size: 75%;
+}
+
+header {
+    padding: .5em;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchbar {
+    display: block;
+    width: 15em;
+    height: 3em;
+    padding: .5em;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+}
+
+.card {
+    border: solid #dfdfdf;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover, .modal-close:hover, .modal-next:hover, .modal-previous:hover {
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: auto;
+    width: 30%;
+    margin-right: 1em;
+}
+
+.text-container {
+    line-height: 175%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.8)
+}
+
+.modal {
+    width: 300px;
+    height: 350px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-text-container {
+    line-height: 275%;
+}
+
+.modal-close, .modal-next, .modal-previous {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.modal-next, .modal-previous {
+    top: 100px;
+}
+
+.modal-previous {
+    left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.test {
+    background-color: yellow;
+}
+
+/* --------------------------------------------------------------
+-------------------- Media Queries ------------------------------
+-----------------------------------------------------------------
+*/
+
+@media (min-width: 768px) {
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .avatar {
+        margin-right: 5%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
