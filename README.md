@@ -9,8 +9,11 @@ LIVE LINK https://findyourboss.netlify.app
 Technologies 
 
 JQuery
+
 AJAX
+
 Fetch API
+
 JavaScript
 
 Features
