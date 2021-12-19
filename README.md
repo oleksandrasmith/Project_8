@@ -21,4 +21,4 @@ Features
 
 Installation
 
-To play the game, download the project files and load the index.html file in to your browser.
+To use this directory, download the project files and load the index.html file in to your browser.
